@@ -221,6 +221,8 @@
     text-align: center;
     font-size: small;
     margin-top: 30px;
+    font-size: x-small;
+    text-transform: uppercase;
 }
 
 .houppa-names{
@@ -305,4 +307,20 @@
 .and-chabat{
     font-size: medium;
     font-family: 'Lora', sans-serif;
+}
+
+.chabat-text{
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-small;
+    font-family: 'Lora', sans-serif;
+    margin-bottom: 30px;
+}
+
+.chabat-date, .chabat-endroit{
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 20px;
 }
