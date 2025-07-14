@@ -15,6 +15,11 @@
     src: url('/Fonts/symphony-pro-regular.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: "parmigiano";
+    src: url('/Fonts/Parmigiano.woff') format('woff');
+}
+
 /* Fallback */
 
 .fallback{
@@ -116,4 +121,145 @@
 
 .home{
     background-color: #EEEBE4;
+    height: fit-content;
+    width: 100%;
+    padding-top: 40px;
+}
+
+/* Home Entry */
+
+.home-entry{
+    width: 85%;
+    height: 80vh;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-home-entry{
+    height: 180px;
+    width: 180px;
+}
+
+/* Houppa */
+
+.houppa{
+    width: 85%;
+    height: fit-content;
+    margin: auto;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #857667;
+}
+
+.houppa-title{
+    text-align: center;
+    font-family: 'symphony';
+    height: fit-content;
+    font-size: xx-large;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.houppa-logo{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+.parents-names{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'symphony';
+    margin: 30px auto auto auto;
+}
+
+.parents-fille, .parents-garcon{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: small;
+}
+
+.parents-fille{
+    text-align: left;
+}
+
+.parents-garcon{
+    text-align: right;
+}
+
+.houppa-text{
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    font-family: 'Lora', sans-serif;
+    text-align: center;
+    font-size: small;
+    margin-top: 30px;
+}
+
+.houppa-names{
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.houppa-and{
+    font-family: "Lora", sans-serif;
+    width: fit-content;
+}
+
+.names-fille{
+    height: fit-content;
+}
+
+.fille-fr, .garcon-fr{
+    font-family: 'symphony';
+    font-size: 60px;
+    height: fit-content;
+}
+
+.fille-hb, .garcon-hb{
+    height: fit-content;
+    font-family: 'parmigiano';
+    transform: translateY(-25px);
+}
+
+.houppa-endroit, .houppa-date{
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: small;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: "Lora", sans-serif;
+}
+
+.pensee{
+    font-family: 'symphony';
+    width: 80%;
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    height: fit-content;
 }
