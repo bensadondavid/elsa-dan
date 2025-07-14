@@ -1,6 +1,5 @@
 import LocationIcon from "../assets/icons/LocalisationIcon";
 
-
 const Waze = ({ lat, long, text }) => {
 
   const handleOpenWaze = () => {
@@ -16,7 +15,7 @@ const Waze = ({ lat, long, text }) => {
   };
 
   return (
-      <button className="waze-link" onClick={handleOpenWaze}>{text}</button>
+      <a className="waze-link" onClick={handleOpenWaze}>{text} <LocationIcon color={'#857667'} width={"20px"} height={"20px"}/> </a>
   );
 };
 

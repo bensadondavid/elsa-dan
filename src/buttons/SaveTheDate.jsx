@@ -9,8 +9,8 @@ const SaveTheDate = ({ saveTheDate, text }) => {
     const event = {
       start: saveTheDate, // [YYYY, MM, DD, HH, MM]
       duration: { hours: 4 },
-      title: "Save the Date: Marine & Daniel's wedding",
-      location: "Ella - Ness Tsiona",
+      title: "Save the Date: Elsa & Dan's Wedding",
+      location: "Arugot Bossem, Hadera",
     };
 
     // Générer le fichier ICS
@@ -28,7 +28,7 @@ const SaveTheDate = ({ saveTheDate, text }) => {
   };
 
   return (
-      <button className="save-the-date-link" onClick={handleDownload}>{text}</button>
+      <a className="save-the-date-link" onClick={handleDownload}>{text} <CalendarIcon color={"#857667"} width={"20px"} height={"20px"}/></a>
   );
 };
 

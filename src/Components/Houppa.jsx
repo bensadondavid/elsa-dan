@@ -38,8 +38,9 @@ function Houppa() {
             ISRAEL, HADERA
         </p>
         <p className="pensee">“Une pensée pleine d’amour pour ceux qui nous manquent en ce jour si spécial“</p>
+        <Waze lat={32.44192} long={34.90390} text={'Itineraire Waze'} />
+        <SaveTheDate saveTheDate={[2025, 11, 25, 18, 30]} text={"Ajouter au calendrier"} />
     </div>
-
   )
 
 }
