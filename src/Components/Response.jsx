@@ -2,6 +2,8 @@ import { useState } from "react"
 
 
 function Response() {
+    
+    const urlCloudflare = ''
 
     const [formData, setFormData] = useState({
         firstName : '',
@@ -32,12 +34,28 @@ function Response() {
         }));
     };
 
+    const handleSubmit = async(e)=>{
+        e.preventDefault()
+        try{
+            const response = await fetch(urlCloudflare, {
+                method : 'POST',
+                headers : {'Content-Type' : 'application/json'},
+                body : JSON.stringify(formData)
+            })
+            const data = await response.json()
+            console.log(data)
+        }
+        catch(error){
+            console.log(error)
+        }
+    }
+
   return (
     
     <div className="response">
         <p className="response-title">La Réponse</p>
         <img src="Images/logo-elsa-dan-home-houppa.webp" alt="" className="response-logo" />
-        <form>
+        <form onSubmit={handleSubmit}>
             <label>Prénom :<br />
                 <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} className="input-text" />
             </label>
