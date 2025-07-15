@@ -7,8 +7,8 @@ function Response() {
         firstName : '',
         lastName : '',
         presence : '',
-        houppa : '',
-        chabat : '',
+        houppa : false,
+        chabat : false,
         message : ''
     })
 
@@ -19,39 +19,55 @@ function Response() {
         }))
     }
 
-    const handlePresence = (e)=>{
-        setFormData(prev =>({
-            ...prev, presence : e.target.value 
-        }))
-    }
+    const handlePresence = (e) => {
+        const value = e.target.value;
+        setFormData(prev => ({
+            ...prev,
+            presence: value,
+            ...(value === 'no' && {
+            houppa: false,
+            chabat: false,
+            message: ''
+            })
+        }));
+    };
 
   return (
     
     <div className="response">
         <p className="response-title">La Réponse</p>
-        <img src="Images/logo-elsa-dan-home-houppa.webp" alt="" className="chabat-logo" />
+        <img src="Images/logo-elsa-dan-home-houppa.webp" alt="" className="response-logo" />
         <form>
-            <label>Prénom<br />
-                <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
+            <label>Prénom :<br />
+                <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} className="input-text" />
             </label>
-            <label>Nom<br />
-                <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
+            <label className="nom">Nom : <br />
+                <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} className="input-text"/>
             </label>
-            <label>
-                <input type="radio" name="presence" value={'yes'} checked={formData.presence === 'yes'} onChange={handlePresence} />
-                Assisteront
-            </label>
+            <div className="radio">
+                <input type="radio" name="presence" value={'yes'} checked={formData.presence === 'yes'} onChange={handlePresence} className="input-radio"/>
+                <p>Assisteront</p>
+            </div>
             {formData.presence === 'yes' &&
-            <>
-                <label>
-                    <input type="checkbox" name="houppa" checked={formData.houppa}  onChange={handleChange}/>
-                </label>
-            </>
+            <div className="presence-yes">
+                <div className="check">
+                    <input type="checkbox" name="houppa" checked={formData.houppa}  onChange={handleChange} className="input-radio"/>
+                    <p>La cérémonie religieuse</p>
+                </div>    
+                <div className="check">
+                    <input type="checkbox" name="chabat" checked={formData.chabat}  onChange={handleChange} className="input-radio"/>
+                    <p>Le Chabat Hatan</p>
+                </div>
+            </div>
             }
-            <label>
-                <input type="radio" name="presence" value={'no'} checked={formData.presence === 'no'} onChange={handlePresence} />
-                N'assisteront pas
+            <div className="radio">
+                <input type="radio" name="presence" value={'no'} checked={formData.presence === 'no'} onChange={handlePresence} className="input-radio"/>
+                <p>N'assisteront pas</p>
+            </div>
+            <label className="label-textarea">Message pour les mariés
+                <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
             </label>
+            <button type="submit">Envoyer</button>
         </form>
     </div>
 

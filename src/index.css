@@ -159,7 +159,7 @@
 
 /* Houppa */
 
-.houppa, .chabat{
+.houppa, .chabat, .response{
     width: 85%;
     height: fit-content;
     margin: auto;
@@ -173,7 +173,7 @@
     color: #857667;
 }
 
-.houppa-title, .chabat-title{
+.houppa-title, .chabat-title, .response-title{
     text-align: center;
     font-family: 'symphony';
     height: fit-content;
@@ -182,7 +182,7 @@
     margin-bottom: 10px;
 }
 
-.houppa-logo{
+.houppa-logo, .response-logo{
     height: 50px;
     width: 50px;
 }
@@ -323,4 +323,117 @@
     font-weight: bold;
     font-size: small;
     margin-bottom: 20px;
+}
+
+
+/* Reponse */
+
+form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+}
+
+form input::placeholder{
+    padding: 10px;
+}
+
+input[type="radio"]:checked {
+  accent-color: #857667; /* ta couleur personnalisée */
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #857667;
+}
+
+/* Champs texte */
+.input-text,
+textarea {
+    width: 100%;
+    height: fit-content;
+    padding: 6px 0px;
+    border: solid 2px #857667;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;            /* espace interne */
+    box-sizing: border-box;
+}
+
+textarea{
+    border-radius: 30px;
+}
+
+
+/* Label du textarea */
+.label-textarea {
+    margin-top: 15px;
+}
+
+/* Label du nom */
+.nom {
+    margin-bottom: 15px;
+}
+
+/* Boutons radio */
+.radio {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.radio input {
+    width: fit-content;
+}
+
+.radio p {
+    width: max-content;
+}
+
+/* Section conditionnelle quand présence === "yes" */
+.presence-yes {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+    gap: 10px;
+    font-family: 'symphony';
+    font-size: x-large;
+}
+
+/* Checkboxes */
+.check {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.check input {
+    width: fit-content;
+}
+
+.check p {
+    width: max-content;
+}
+
+/* Bouton d'envoi */
+form button {
+    background-color: transparent;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: medium;
+    font-family: 'Lora', sans-serif;
+    color: #857667;
+    border: solid 2px #857667;
+    margin-top: 10px;
 }
