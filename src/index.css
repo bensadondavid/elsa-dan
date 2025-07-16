@@ -100,6 +100,7 @@
     left: 0;
     z-index: -1;
     opacity: 0.5;
+    object-fit: cover;
 }
 
 .entry-logo{
@@ -290,7 +291,7 @@
 
 /* Fleurs-houppa */
 
-.houppa-container{
+.houppa-container, .chabat-container, .response-container{
     height: fit-content;
     width: 85%;
     margin: auto;
@@ -525,6 +526,104 @@
 
 /* Chabat */
 
+/* fleurs-chabat */
+
+.fleurs-chabat{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fleur-chabat-1{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+}
+
+.fleur-chabat-2{
+    position: absolute;
+    top: -70px;
+    right: -160px;
+    height: 400px;
+    width: 180px;
+    z-index: 3;
+    rotate: 150deg;
+}
+
+.fleur-chabat-3{
+    position: absolute;
+    top: 50px;
+    right: -180px;
+    height: 400px;
+    width: 180px;
+    z-index: 3;
+    rotate: 150deg;
+}
+
+.fleur-chabat-4{
+    position: absolute;
+    top: 260px;
+    right: -100px;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+}
+
+.fleur-chabat-5{
+    position: absolute;
+    bottom: 15%;
+    right: -100px;
+    height: 150px;
+    width: 150px;
+    z-index: 3;
+}
+
+.fleur-chabat-6{
+    position: absolute;
+    bottom: -10%;
+    right: -100px;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+    rotate: 180deg;
+}
+
+.fleur-chabat-7{
+    position: absolute;
+    bottom: 10%;
+    left: -100px;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+    rotate: 180deg;
+}
+
+.fleur-chabat-8{
+    position: absolute;
+    bottom: 40%;
+    left: -100px;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+    rotate: 180deg;
+}
+
+.fleur-chabat-9{
+    position: absolute;
+    bottom: 60%;
+    left: -100px;
+    height: 150px;
+    width: 150px;
+    z-index: 3;
+    rotate: 180deg;
+}
+
 .chabat-logo{
     height: 70px;
     width: 70px;
@@ -571,6 +670,89 @@
 
 
 /* Reponse */
+
+.fleurs-response{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fleur-response-1{
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    height: 150px;
+    width: 150px;
+    z-index: 3;
+}
+
+.fleur-response-2{
+    position: absolute;
+    top: -70px;
+    right: -130px;
+    height: 350px;
+    width: 180px;
+    z-index: 3;
+    rotate: 140deg;
+}
+
+.fleur-response-3{
+    position: absolute;
+    top: 210px;
+    right: -80px;
+    height: 120px;
+    width: 120px;
+    z-index: 2;
+}
+
+.fleur-response-4{
+    position: absolute;
+    bottom: 160px;
+    right: -80px;
+    height: 120px;
+    width: 120px;
+    z-index: 3;
+}
+
+.fleur-response-5{
+    position: absolute;
+    bottom: -210px;
+    right: -170px;
+    height: 350px;
+    width: 180px;
+    z-index: 3;
+    rotate: 140deg;
+}
+
+.fleur-response-6{
+    position: absolute;
+    bottom: -90px;
+    left: -80px;
+    height: 180px;
+    width: 180px;
+    z-index: 3;
+}
+
+.fleur-response-7{
+    position: absolute;
+    top: 210px;
+    left: -80px;
+    height: 120px;
+    width: 120px;
+    z-index: 2;
+}
+
+.fleur-response-8{
+    position: absolute;
+    bottom: 100px;
+    left: -80px;
+    height: 120px;
+    width: 120px;
+    z-index: 2;
+}
 
 form {
     margin-top: 40px;
@@ -680,4 +862,67 @@ form button {
     color: #857667;
     border: solid 2px #857667;
     margin-top: 10px;
+}
+
+/* ETA */
+
+.eta{
+    height: fit-content;
+    width: 85%;
+    background-color: #fff;
+    color: #857667;
+    padding: 20px 0;
+    margin: auto;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.eta img{
+    position: absolute;
+    bottom: -50px;
+    right: -20px;
+    height: 100px;
+    width: 100px;
+}
+
+.eta-title{
+    font-family: 'symphony';
+    font-size: xx-large;
+}
+
+.eta-text{
+    width: 90%;
+    font-family: 'Lora', sans-serif;
+    font-size: small;
+}
+
+.eta-button{
+    background-color: transparent;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: medium;
+    font-family: 'Lora', sans-serif;
+    color: #857667;
+    border: solid 2px #857667;
+    margin-top: 10px;
+}
+
+
+.azmana-link{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    color: #857667;
+    margin-bottom: 30px;
+    font-style: italic;
 }

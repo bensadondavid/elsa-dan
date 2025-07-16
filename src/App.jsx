@@ -14,8 +14,8 @@ function App() {
     <BrowserRouter>
     <Suspense fallback={<Fallback />}>
         <Routes>
-          <Route path="/" element={innerWidth < 410 ? <Entry /> : <TooBig />} />
-          <Route path="/home" element={innerWidth < 410 ? <Home /> : <TooBig />} />
+          <Route path="/" element={innerWidth < 450 ? <Entry /> : <TooBig />} />
+          <Route path="/home" element={innerWidth < 450 ? <Home /> : <TooBig />} />
         </Routes>
       </Suspense>
     </BrowserRouter> 

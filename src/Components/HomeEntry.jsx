@@ -1,4 +1,4 @@
-
+import { motion } from "motion/react"
 
 function HomeEntry() {
 
@@ -17,7 +17,8 @@ function HomeEntry() {
         <img src="Images/fleur-5.webp" className="fleur-9" />
   </div>
     <div className="home-entry">
-        <img src="/Images/logo-elsa-dan-home-entry.webp" alt="" className="logo-home-entry" />
+        <motion.img initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 0.8, ease: "easeOut" }}
+         src="/Images/logo-elsa-dan-home-entry.webp" alt="" className="logo-home-entry" />
     </div>
 </div>
   )
