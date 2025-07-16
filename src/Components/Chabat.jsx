@@ -6,13 +6,6 @@ function Chabat() {
   return (
 
     <div className="chabat">
-      <img src="Images/fleur-1.webp" className="fleur-1" />
-        <img src="Images/fleur-2.webp" className="fleur-2" />
-        <img src="Images/fleur-3.webp" className="fleur-4" />
-        <img src="Images/fleur-5.webp" className="fleur-5" />
-        <img src="Images/fleur-2.webp" className="fleur-6" />
-        <img src="Images/fleur-3.webp" className="fleur-8" />
-        <img src="Images/fleur-5.webp" className="fleur-9" />
         <p className="chabat-title">Le Chabat Hatan</p>
         <img src="Images/logo-elsa-dan-home-houppa.webp" alt="" className="chabat-logo" />
         <div className="chabat-names">

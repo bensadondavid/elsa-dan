@@ -193,7 +193,6 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 0;
 }
 
 .logo-home-entry{
@@ -207,63 +206,58 @@
     left: -80px;
     height: 150px;
     width: 150px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .fleur-2{
     position: absolute;
     top: -70px;
-    left: 35%;
+    left: 25%;
     height: 100px;
     width: 100px;
+    z-index: 2;
 }
 
 .fleur-3{
     position: absolute;
-    top: -30px;
-    left: 40%;
-    height: 150px;
-    width: 150px;
-}
-
-.fleur-4{
-    position: absolute;
-    top: -290px;
+    top: -240px;
     right: -80px;
     height: 350px;
     width: 180px;
     z-index: 1;
     rotate: 20deg;
+    z-index: 3;
+}
+
+.fleur-4{
+    position: absolute;
+    top: 25%;
+    right: -60px;
+    height: 120px;
+    width: 120px;
+    rotate: 180deg;
+    z-index: 3;
 }
 
 .fleur-5{
     position: absolute;
-    top: 30%;
-    right: -90px;
-    height: 120px;
-    width: 120px;
-    rotate: 180deg;
+    bottom: 30%;
+    right: -60px;
+    height: 100px;
+    width: 100px;
+    z-index: 4;
 }
 
 .fleur-6{
     position: absolute;
-    bottom: 20%;
-    right: -60px;
-    height: 100px;
-    width: 100px;
+    bottom: 5%;
+    right: -80px;
+    height: 150px;
+    width: 150px;
     z-index: 3;
 }
 
 .fleur-7{
-    position: absolute;
-    bottom: -40px;
-    right: -80px;
-    height: 150px;
-    width: 150px;
-    z-index: 2;
-}
-
-.fleur-8{
     position: absolute;
     bottom: -210px;
     left: -100px;
@@ -271,22 +265,144 @@
     width: 180px;
     z-index: 2;
     rotate: 200deg;
+    z-index: 3;
+}
+
+.fleur-8{
+    position: absolute;
+    bottom: 25%;
+    left: -110px;
+    height: 150px;
+    width: 150px;
+    z-index: 3;
 }
 
 .fleur-9{
     position: absolute;
-    top: 40%;
-    left: -80px;
-    height: 120px;
-    width: 120px;
+    top: 25%;
+    left: -40px;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
 }
-
-
 
 /* Houppa */
 
-.houppa, .chabat, .response{
+/* Fleurs-houppa */
+
+.houppa-container{
+    height: fit-content;
     width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.fleurs-houppa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fleur-houppa-1{
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    height: 150px;
+    width: 150px;
+    z-index: 3;
+}
+
+.fleur-houppa-2{
+    position: absolute;
+    top: -50px;
+    left: 30%;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+
+.fleur-houppa-3{
+    position: absolute;
+    top: -250px;
+    right: -110px;
+    height: 350px;
+    width: 180px;
+    z-index: 2;
+    rotate: 20deg;
+}
+
+.fleur-houppa-4{
+    position: absolute;
+    top: 35%;
+    right: -80px;
+    height: 120px;
+    width: 120px;
+    rotate: 180deg;
+    z-index: 3;
+}
+
+.fleur-houppa-5{
+    position: absolute;
+    top: 45%;
+    right: -80px;
+    height: 100px;
+    width: 100px;
+    rotate: 180deg;
+    z-index: 2;
+}
+
+.fleur-houppa-6{
+    position: absolute;
+    top: 35%;
+    right: -110px;
+    height: 350px;
+    width: 180px;
+    z-index: 2;
+}
+
+.fleur-houppa-7{
+    position: absolute;
+    bottom: -60px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+}
+
+.fleur-houppa-8{
+    position: absolute;
+    bottom: -60px;
+    left: 20%;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+
+.fleur-houppa-9{
+    position: absolute;
+    bottom: -5%;
+    left: -120px;
+    height: 350px;
+    width: 180px;
+    z-index: 2;
+    rotate: 200deg;
+    z-index: 3;
+}
+
+.fleur-houppa-10{
+    position: absolute;
+    top: 35%;
+    left: -60px;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+}
+
+.houppa, .chabat, .response{
+    width: 100%;
     height: fit-content;
     margin: auto;
     margin-bottom: 70px;
@@ -298,6 +414,7 @@
     justify-content: center;
     color: #857667;
     position: relative;
+    z-index: 2;
 }
 
 .houppa-title, .chabat-title, .response-title{
