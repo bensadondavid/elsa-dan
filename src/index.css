@@ -35,6 +35,30 @@
     width: 250px;
 }
 
+/* Too Big */
+
+.too-big{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEBE4;
+}
+
+.too-big img{
+    width: 250px;
+    height: 250px;
+}
+
+.too-big p{
+    height: fit-content;
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    color: #857667;
+}
+
 /* Waze */
 
 .waze-link, .save-the-date-link{
@@ -137,6 +161,7 @@
     height: fit-content;
     width: 100%;
     padding-top: 40px;
+    overflow: hidden;
 }
 
 /* Home Entry */
@@ -150,12 +175,94 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .logo-home-entry{
     height: 180px;
     width: 180px;
 }
+
+.fleur-1{
+    position: absolute;
+    top: -40px;
+    left: -80px;
+    height: 150px;
+    width: 150px;
+}
+
+.fleur-2{
+    position: absolute;
+    top: -70px;
+    left: 35%;
+    height: 100px;
+    width: 100px;
+}
+
+.fleur-3{
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    height: 150px;
+    width: 150px;
+}
+
+.fleur-4{
+    position: absolute;
+    top: -290px;
+    right: -80px;
+    height: 350px;
+    width: 180px;
+    z-index: 1;
+    rotate: 20deg;
+}
+
+.fleur-5{
+    position: absolute;
+    top: 30%;
+    right: -90px;
+    height: 120px;
+    width: 120px;
+    rotate: 180deg;
+}
+
+.fleur-6{
+    position: absolute;
+    bottom: 20%;
+    right: -60px;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+}
+
+.fleur-7{
+    position: absolute;
+    bottom: -40px;
+    right: -80px;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+}
+
+.fleur-8{
+    position: absolute;
+    bottom: -210px;
+    left: -100px;
+    height: 350px;
+    width: 180px;
+    z-index: 2;
+    rotate: 200deg;
+}
+
+.fleur-9{
+    position: absolute;
+    top: 40%;
+    left: -80px;
+    height: 120px;
+    width: 120px;
+}
+
+
 
 /* Houppa */
 
@@ -171,6 +278,7 @@
     align-items: center;
     justify-content: center;
     color: #857667;
+    position: relative;
 }
 
 .houppa-title, .chabat-title, .response-title{
