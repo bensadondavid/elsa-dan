@@ -33,6 +33,7 @@ function Response() {
             ...(value === 'no' && {
             houppa: false,
             chabat: false,
+            number : '',
             message: ''
             })
         }));

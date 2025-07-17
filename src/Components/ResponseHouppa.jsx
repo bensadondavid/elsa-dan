@@ -28,6 +28,8 @@ function ResponseHouppa() {
         setFormData(prev => ({
             ...prev,
             presence: value,
+            number : '',
+            message: ''
         }));
     };
 
