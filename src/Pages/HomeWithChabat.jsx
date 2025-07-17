@@ -1,11 +1,11 @@
 import HomeEntry from "../Components/HomeEntry"
 import Houppa from "../Components/Houppa"
 import Chabat from "../Components/Chabat"
+import Response from "../Components/Response"
 import Eta from "../Components/Eta"
 import Musique from "../Components/Musique"
-import ResponseHouppa from "../Components/ResponseHouppa"
 
-function Home() {
+function HomeWithChabat() {
   return (
 
     <div className="home">
@@ -13,7 +13,7 @@ function Home() {
       <HomeEntry />
       <Houppa />
       <Chabat />
-      <ResponseHouppa />
+      <Response />
       <Eta />
       <a target="_blank" href="https://azmana.fr" className="azmana-link">Réalisé avec amour par Azmana</a>
     </div>
@@ -21,4 +21,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomeWithChabat
