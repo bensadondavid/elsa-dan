@@ -6,9 +6,10 @@ tailspin.register()
 
 function ResponseHouppa() {
 
+    const urlCloudflare = 'https://elsa-dan.bensadondavidn.workers.dev/'
     const [isLoading, setIsLoading] = useState(false)
-    const urlCloudflare = ''
     const [formData, setFormData] = useState({
+        type : 'without-chabat',
         firstName : '',
         lastName : '',
         presence : '',

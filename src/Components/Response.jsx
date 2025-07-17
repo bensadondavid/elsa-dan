@@ -6,9 +6,10 @@ tailspin.register()
 
 function Response() {
     
-    const urlCloudflare = ''
+    const urlCloudflare = 'https://elsa-dan.bensadondavidn.workers.dev/'
     const [isLoading, setIsLoading] = useState(false)
     const [formData, setFormData] = useState({
+        type : 'with-chabat',
         firstName : '',
         lastName : '',
         presence : '',
