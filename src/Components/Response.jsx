@@ -31,7 +31,7 @@ function Response() {
         setFormData(prev => ({
             ...prev,
             presence: value,
-            ...(value === 'no' && {
+            ...(value === 'Non' && {
             houppa: false,
             chabat: false,
             number : '',
@@ -48,7 +48,7 @@ function Response() {
             setIsLoading(false)
             return;
             }
-            if (formData.presence === 'yes' && (!formData.number || formData.number < 1)) {
+            if (formData.presence === 'Oui' && (!formData.number || formData.number < 1)) {
             alert("Merci d'indiquer un nombre d'invités valide.");
             setIsLoading(false);
             return;
@@ -110,7 +110,7 @@ function Response() {
                     <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} className="input-text" required />
                 </motion.label>
                 <div className="radio">
-                    <input type="radio" name="presence" value={'Oui'} checked={formData.presence === 'yes'} onChange={handlePresence} className="input-radio"/>
+                    <input type="radio" name="presence" value={'Oui'} checked={formData.presence === 'Oui'} onChange={handlePresence} className="input-radio"/>
                     <p>Assisteront</p>
                 </div>
                 {formData.presence === 'Oui' &&
@@ -129,7 +129,7 @@ function Response() {
                 </div>
                 }
                 <div className="radio">
-                    <input type="radio" name="presence" value={'Non'} checked={formData.presence === 'no'} onChange={handlePresence} className="input-radio"/>
+                    <input type="radio" name="presence" value={'Non'} checked={formData.presence === 'Non'} onChange={handlePresence} className="input-radio"/>
                     <p>N'assisteront pas</p>
                 </div>
                 <label className="label-textarea">Message pour les mariés
