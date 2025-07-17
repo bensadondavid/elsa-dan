@@ -12,7 +12,6 @@ function Home() {
       <Musique />
       <HomeEntry />
       <Houppa />
-      <Chabat />
       <ResponseHouppa />
       <Eta />
       <a target="_blank" href="https://azmana.fr" className="azmana-link">Réalisé avec amour par Azmana</a>
