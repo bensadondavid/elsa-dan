@@ -110,10 +110,10 @@ function Response() {
                     <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} className="input-text" required />
                 </motion.label>
                 <div className="radio">
-                    <input type="radio" name="presence" value={'yes'} checked={formData.presence === 'yes'} onChange={handlePresence} className="input-radio"/>
+                    <input type="radio" name="presence" value={'Oui'} checked={formData.presence === 'yes'} onChange={handlePresence} className="input-radio"/>
                     <p>Assisteront</p>
                 </div>
-                {formData.presence === 'yes' &&
+                {formData.presence === 'Oui' &&
                 <div className="presence-yes">
                     <div className="check">
                         <input type="checkbox" name="houppa" checked={formData.houppa}  onChange={handleChange} className="input-radio"/>
@@ -129,7 +129,7 @@ function Response() {
                 </div>
                 }
                 <div className="radio">
-                    <input type="radio" name="presence" value={'no'} checked={formData.presence === 'no'} onChange={handlePresence} className="input-radio"/>
+                    <input type="radio" name="presence" value={'Non'} checked={formData.presence === 'no'} onChange={handlePresence} className="input-radio"/>
                     <p>N'assisteront pas</p>
                 </div>
                 <label className="label-textarea">Message pour les mariés
