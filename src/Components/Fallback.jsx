@@ -1,7 +1,9 @@
 
 function Fallback() {
   return (
-    <div>Fallback</div>
+    <div className="fallback">
+      <img src="/Images/logo-elsa-dan-home-entry.webp" />
+    </div>
   )
 }
 

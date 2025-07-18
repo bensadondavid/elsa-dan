@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Suspense } from "react"
+import { Suspense, useEffect, useState } from "react"
 import Entry from "./Pages/Entry"
 import EntryWithChabat from "./Pages/EntryWithChabat"
 import Home from "./Pages/Home"
@@ -10,6 +10,17 @@ import Fallback from './Components/Fallback'
 function App() {
 
   const innerWidth = window.innerWidth
+  const [showFallback, setShowFallback] = useState(true)
+
+  useEffect(()=>{
+    const timer = setTimeout(() => {
+        setShowFallback(false)
+    }, 1000);
+
+    return ()=> clearTimeout(timer)
+  }, [])
+
+  if (showFallback) return <Fallback />
 
   return (
     <>
