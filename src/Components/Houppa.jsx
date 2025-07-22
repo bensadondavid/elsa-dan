@@ -45,7 +45,7 @@ function Houppa() {
                 </motion.div>
             </div>
             <p className="houppa-text">Et vous prient de bien vouloir assister à la houppa ainsi qu’à la soirée qui aura lieu </p>
-            <p className="houppa-date">MARDI 25 NOVEMBRE 2025 <br /> À 18h30 PRÉCISES</p>
+            <p className="houppa-date">MARDI 25 NOVEMBRE 2025 <br /> À 17h45 PRÉCISES</p>
             <p className="houppa-endroit">
                 À LA SALLE ARUGOT BOSEM <br />
                 כביש 4 בכניסה לפארק השרון <br />
