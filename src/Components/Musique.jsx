@@ -34,7 +34,7 @@ function Musique(){
     <div className="musique">
       <audio style={{display: 'none'}} ref={audioRef} src={srcMusique} autoPlay loop controls />
       <button onClick={handleMute}>
-        {isMuted ? <PlayIcon /> : <PauseIcon /> }
+        {isMuted ? <PauseIcon /> : <PlayIcon /> }
       </button>
     </div>
   );
